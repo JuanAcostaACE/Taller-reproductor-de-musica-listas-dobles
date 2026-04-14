@@ -61,7 +61,6 @@ export class DoublyLinkedList {
     if (index <= 0) return this.addToStart(song);
     if (index >= this.size) return this.addToEnd(song);
 
-    // Recorrer hasta el nodo en posición (index - 1)
     let current = this.head!;
     for (let i = 0; i < index - 1; i++) {
       current = current.next!;
